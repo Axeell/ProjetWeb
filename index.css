@@ -1,0 +1,212 @@
+body {
+  background-color: floralwhite;
+}
+<
+/* Make the image fully responsive */
+ .carousel-inner img {
+      width: 100%;
+      height: 300px;
+  }
+
+
+.sidenav {
+  width: 150px;
+height: 100%;
+  position: fixed;
+  z-index: 1;
+    background-color: cornflowerblue;
+
+margin-top: auto;
+
+  overflow-x: hidden;
+
+  padding: 8px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+.main-vendre {
+  background-size: cover;
+ background-position: center;
+ position: relative;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    
+.content {
+  background-color: #ddd;
+  padding: 10px;
+ width: 100%/* Should be removed. Only for demonstration */
+}
+
+.content1 {
+  background-color: cornsilk;
+  padding: 10px;
+ width: 100%/* Should be removed. Only for demonstration */
+}
+
+.content2 {
+  background-color: yellow;
+  padding: 10px;
+  height: 200px;
+ width: 100%/* Should be removed. Only for demonstration */
+}
+
+.content3 {
+  background-color: green;
+  padding: 10px;
+  height: 200px;
+ width: 100%/* Should be removed. Only for demonstration */
+}
+
+.content4 {
+    width: 100%;
+    height: 450px;
+    background-color: aliceblue;
+}
+
+
+
+.card {
+  position: relative; 
+  width: 250px;
+  margin-left: 100px;
+  height: 300px;
+}
+
+
+
+
+.card .card-content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  height: 40px;
+  padding: 5px; /* Some padding */
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content5 {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.button2 {
+  background-color: red; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.sidenav2 {
+  border-radius: 10px;
+  width: 145px;
+  height: 155px;    
+  position: fixed;
+  margin-top:150px;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav2 a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav2 a:hover {
+  color: #064579;
+}
