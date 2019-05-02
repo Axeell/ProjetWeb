@@ -1,13 +1,11 @@
 body {
   background-color: floralwhite;
 }
-<
-/* Make the image fully responsive */
- .carousel-inner img {
+
+.carousel-inner img {
       width: 100%;
       height: 300px;
   }
-
 
 .sidenav {
   width: 150px;
@@ -22,6 +20,8 @@ margin-top: auto;
 
   padding: 8px;
 }
+
+
 
 .sidenav a {
   padding: 6px 8px 6px 16px;
@@ -41,16 +41,23 @@ margin-top: auto;
   padding: 0px 10px;
 }
 
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+<
+/* Make the image fully responsive */
+
+
+
 .main-vendre {
   background-size: cover;
  background-position: center;
  position: relative;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+
     
 .content {
   background-color: #ddd;
@@ -59,22 +66,20 @@ margin-top: auto;
 }
 
 .content1 {
-  background-color: cornsilk;
+  background-color: floralwhite;
   padding: 10px;
  width: 100%/* Should be removed. Only for demonstration */
 }
 
 .content2 {
-  background-color: yellow;
+  background-color: #ddd;
   padding: 10px;
-  height: 200px;
  width: 100%/* Should be removed. Only for demonstration */
 }
 
 .content3 {
-  background-color: green;
+  background-color: floralwhite;
   padding: 10px;
-  height: 200px;
  width: 100%/* Should be removed. Only for demonstration */
 }
 
@@ -184,6 +189,22 @@ h1 {
   cursor: pointer;
   border-radius: 12px;
 }
+
+.button3 {
+  background-color: dodgerblue; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 25%;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
 
 .sidenav2 {
   border-radius: 10px;
