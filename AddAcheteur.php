@@ -16,11 +16,11 @@ $Email = isset($_POST["Email"])? $_POST["Email"] : "";
 $Pseudo = isset($_POST["Pseudo"])? $_POST["Pseudo"] : "";
       
 //ouverture de la BDD     
-$database = "ECEAmazon";
+$database = "ece";
 
 //connectez-vous dans votre BDD
 //Rappel : votre serveur = localhost | votre login = root | votre mot de pass = '' ROOT SUR MAC
-$db_handle = mysqli_connect('localhost', 'root', 'root' );
+$db_handle = mysqli_connect('localhost', 'root', '' );
 $db_found = mysqli_select_db($db_handle, $database);
 
  //on appuie sur le bouton puis on vérifie que la BDD existe
